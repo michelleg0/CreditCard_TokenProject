@@ -14,6 +14,7 @@ public class DatabaseConnection {
     }
 
     public static Connection getConnection() throws SQLException {
+        //connects to config file
         String url = Config.get("db.url");
         String user = Config.get("db.user");
         String password = Config.get("db.password");
