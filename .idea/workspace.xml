@@ -4,18 +4,48 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="984a26fd-77d9-41d3-af36-27540abade19" name="Changes" comment="" />
+    <list default="true" id="984a26fd-77d9-41d3-af36-27540abade19" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/junit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mockito_junit_jupiter.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_connector_java.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/main/java/dao/CreditCardDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/main/java/dao/CustomerDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/main/java/dao/PaymentProcessorDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/main/java/dto/CreditCardDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/main/java/dto/CustomerDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/main/java/dto/PaymentProcessorDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/main/java/entity/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/main/java/entity/PaymentProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/main/java/utility/DatabaseConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/main/java/utility/DbConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/main/resources/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/scripts/sql/scripts.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/CCTP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CCTP.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ImportTool/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/ImportTool/script.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2iUvRPezeldVlCo1ayxkgv7mGQH" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -23,10 +53,25 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/michelleguerrero/Desktop/CCTP"
+    "jdk.selected.JAVA_MODULE": "openjdk-21",
+    "last_opened_file_path": "/Users/michelleguerrero/Desktop/CCTP",
+    "onboarding.tips.debug.path": "/Users/michelleguerrero/Desktop/CCTP/src/src/Main.java",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "PLAIN_TEXT"
+    ]
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -39,5 +84,16 @@
       <updated>1719557961845</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/src/main/java/Main.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
