@@ -12,7 +12,7 @@ import main.java.entity.PaymentProcessor;
 import main.java.utility.DatabaseConnection;
 import main.java.utility.DbConstants;
 
-public class PaymetProcessorDAO {
+public class PaymentProcessorDAO {
     public int insertPaymentProcessor(PaymentProcessorDTO paymentProcessor) {
         String sql = "INSERT INTO payment_processor (name) VALUES (?)";
 
@@ -20,7 +20,7 @@ public class PaymetProcessorDAO {
 
         try (Connection conn = DatabaseConnection.getConnection();
              PreparedStatement stmt = conn.prepareStatement(sql)) {
-            stmt.setString(1, paymentProcessor.name());
+            stmt.setString(1, paymentProcessor.getName());
 
             stmt.executeUpdate();
 
@@ -50,7 +50,7 @@ public class PaymetProcessorDAO {
                 int id = rs.getInt(DbConstants.ID);
                 String name = rs.getString(DbConstants.NAME);
 
-                paymentProcessors.add(new PaymentProcessor(id, name));
+                paymentProcessors.add(new PaymentProcessor(name, id));
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -73,7 +73,7 @@ public class PaymetProcessorDAO {
                     int paymentProcessorId = rs.getInt(DbConstants.ID);
                     String name = rs.getString(DbConstants.NAME);
 
-                    paymentProcessor = new PaymentProcessor(paymentProcessorId, name);
+                    paymentProcessor = new PaymentProcessor(name, paymentProcessorId);
                 }
             }
         } catch (SQLException e) {

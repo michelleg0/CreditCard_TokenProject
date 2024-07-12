@@ -20,9 +20,9 @@ public class CustomerDAO {
 
         try (Connection conn = DatabaseConnection.getConnection();
              PreparedStatement stmt = conn.prepareStatement(sql)) {
-            stmt.setString(1, customer.firstName());
-            stmt.setString(2, customer.lastName());
-            stmt.setString(3, customer.email());
+            stmt.setString(1, customer.getFirstName());
+            stmt.setString(2, customer.getLastName());
+            stmt.setString(3, customer.getEmail());
 
             stmt.executeUpdate();
 

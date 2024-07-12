@@ -1,20 +1,20 @@
-/*document.getElementById('csvForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent the form from submitting the traditional way
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector("form").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent the default form submission
 
-    const fileInput = document.getElementById('csvFile');
-    const file = fileInput.files[0]; // Get the file from the input
+        const form = event.target;
+        const formData = new FormData(form);
 
-    if (file) {
-        const reader = new FileReader(); // Create a new FileReader
-
-        reader.onload = function(e) {
-            const csvContent = e.target.result; // Get the file content
-            console.log('CSV Content:', csvContent); // Print the content to the console
-            // send the data to the backend
-        };
-
-        reader.readAsText(file); // Read the file as text
-    } else {
-        alert('Please select a CSV file.');
-    }
+        fetch('submit', {
+            method: 'POST',
+            body: new URLSearchParams(formData)
+        })
+            .then(response => response.text())
+            .then(result => {
+                document.getElementById('result').innerText = result;
+            })
+            .catch(error => {
+                document.getElementById('result').innerText = 'Error: ' + error;
+            });
+    });
 });

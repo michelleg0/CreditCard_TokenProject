@@ -18,7 +18,7 @@ public class CustomerDTO {
 
     //Create constructor. A constructor is a special method that is called when an object is initiated.
     //Must be the same as the class name.
-    public CustomerDTO(String firstName, String lastName, String email, CreditCardDTO creditCard) {
+    public CustomerDTO(String firstName, String lastName, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -32,5 +32,37 @@ public class CustomerDTO {
         System.out.println("Customer Last Name: " + this.lastName);
         System.out.println("Customer Email: " + this.email);
 
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public CreditCardDTO getCreditCard() {
+        return creditCard;
+    }
+
+    public void setCreditCard(CreditCardDTO creditCard) {
+        this.creditCard = creditCard;
     }
 }
