@@ -13,6 +13,7 @@ import main.java.utility.DatabaseConnection;
 import main.java.utility.DbConstants;
 
 public class PaymentProcessorDAO {
+    // Method to insert a new payment processor and return their ID
     public int insertPaymentProcessor(PaymentProcessorDTO paymentProcessor) {
         String sql = "INSERT INTO payment_processor (name) VALUES (?)";
 
@@ -37,6 +38,7 @@ public class PaymentProcessorDAO {
 
         return newId;
     }
+// Method to get all payment processors from the database and return a list of payment processor objects
 
     public List<PaymentProcessor> getAllPaymentProcessors() {
         String sql = "SELECT id, name FROM payment_processor";
@@ -59,6 +61,7 @@ public class PaymentProcessorDAO {
         return paymentProcessors;
     }
 
+    // Method to get a payment processor by their ID and return a payment processor object
     public PaymentProcessor getPaymentProcessor(int id) {
         String sql = "SELECT id, name FROM payment_processor WHERE id = ?";
 

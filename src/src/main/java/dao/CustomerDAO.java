@@ -14,6 +14,7 @@ import main.java.utility.DbConstants;
 
 public class CustomerDAO {
     public int insertCustomer(CustomerDTO customer) {
+        // Method to insert a new customer and return their ID
         String sql = "INSERT INTO customer (first_name, last_name, email) VALUES (?, ?, ?)";
 
         int newId = -1;
@@ -39,7 +40,7 @@ public class CustomerDAO {
 
         return newId;
     }
-
+   //Method to get all customers from the database and return a list of customer objects
     public List<Customer> getAllCustomers() {
         String sql = "SELECT id, first_name, last_name, email FROM customer";
 
@@ -62,7 +63,7 @@ public class CustomerDAO {
 
         return customers;
     }
-
+    // Method to get a customer by their ID and return a customer object
     public Customer getCustomer(int id) {
         String sql = "SELECT id, first_name, last_name, email FROM customer WHERE id = ?";
 
